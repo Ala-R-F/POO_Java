@@ -1,5 +1,3 @@
-package dogs;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Collection;
@@ -10,8 +8,8 @@ public class Main {
 		
 		/* 
 		Crie um mapa em que a chave representa o nome dos alunos
-		e o valor a idade. Em seguida, invoque um método que
-		retorne a média das idades dos alunos.
+		e o valor a idade. Em seguida, invoque um mÃ©todo que
+		retorne a mÃ©dia das idades dos alunos.
 		*/
 		
 		HashMap m = new HashMap();
@@ -20,7 +18,7 @@ public class Main {
 		m.put("Gustavo Guedes", 33);
 		
 		
-		System.out.println("A média é: " + media((Map) m) + " e Média 2: " + mediaKey((Map) m));
+		System.out.println("A mÃ©dia Ã©: " + media((Map) m) + " e MÃ©dia 2: " + mediaKey((Map) m));
 	}	
 	public static double media(Map g) {
 		Collection a = g.values();
@@ -39,7 +37,6 @@ public class Main {
 		
 		Iterator iterator = a.iterator();
 		while (iterator.hasNext()) {
-			soma+= (int) iterator.next();
 			Object o = iterator.next();
 			String s = (String) o;
 			System.out.println(s);
